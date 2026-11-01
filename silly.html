@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-page="silly">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Silly Dad</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤪</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try { if (sessionStorage.getItem('wipe')) { sessionStorage.removeItem('wipe'); document.documentElement.classList.add('is-arriving'); } } catch (e) {}
+  </script>
+</head>
+<body class="theme-silly">
+  <div class="wipe" aria-hidden="true"><div class="wipe-panel wipe-a"></div><div class="wipe-panel wipe-b"></div></div>
+  <div class="emoji-bg" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Pages">
+    <a href="index.html" data-wipe="home">Home</a>
+    <a href="world.html" data-wipe="world"><span><span class="nav-long">Around the </span>World</span></a>
+    <a href="silly.html" data-wipe="silly" aria-current="page"><span>Silly<span class="nav-long"> Dad</span></span></a>
+    <a href="cool.html" data-wipe="cool"><span><span class="nav-long">Cooler Than Yours</span><span class="nav-short">Cool</span></span></a>
+    <a href="food.html" data-wipe="food"><span>Food<span class="nav-long"> + Family</span></span></a>
+  </nav>
+
+  <header class="silly-hero">
+    <h1 class="silly-title">Silly Dad</h1>
+    <p class="silly-sub">Motu is a pretty funny person sometimes</p>
+    <div class="silly-hint">Scroll if you dare ↓</div>
+  </header>
+
+  <main id="gallery" class="gallery g-frames-polaroid"></main>
+
+  <footer class="page-end">
+    <p class="eyebrow">Okay, okay</p>
+    <h2>He's silly, but he's the best. ❤️</h2>
+    <a href="cool.html" data-wipe="cool">But is he cool? 😎</a>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="images/photos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/silly.js"></script>
+</body>
+</html>

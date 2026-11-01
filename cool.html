@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" data-page="cool">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Dad is Cooler Than Yours</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😎</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try { if (sessionStorage.getItem('wipe')) { sessionStorage.removeItem('wipe'); document.documentElement.classList.add('is-arriving'); } } catch (e) {}
+  </script>
+</head>
+<body class="theme-cool">
+  <div class="wipe" aria-hidden="true"><div class="wipe-panel wipe-a"></div><div class="wipe-panel wipe-b"></div></div>
+  <div class="snow" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Pages">
+    <a href="index.html" data-wipe="home">Home</a>
+    <a href="world.html" data-wipe="world"><span><span class="nav-long">Around the </span>World</span></a>
+    <a href="silly.html" data-wipe="silly"><span>Silly<span class="nav-long"> Dad</span></span></a>
+    <a href="cool.html" data-wipe="cool" aria-current="page"><span><span class="nav-long">Cooler Than Yours</span><span class="nav-short">Cool</span></span></a>
+    <a href="food.html" data-wipe="food"><span>Food<span class="nav-long"> + Family</span></span></a>
+  </nav>
+
+  <header class="cool-hero">
+    <h1 class="cool-title">
+      <span class="cool-line cool-pre">My Dad is</span>
+      <span class="cool-word-wrap">
+        <span class="cool-word">Cooler</span>
+        <!-- Pixel "deal with it" sunglasses -->
+        <svg class="shades" viewBox="0 0 32 8" aria-hidden="true" shape-rendering="crispEdges">
+          <rect x="0" y="0" width="32" height="2" fill="#000"/>
+          <rect x="3" y="2" width="11" height="2" fill="#000"/>
+          <rect x="4" y="4" width="9" height="2" fill="#000"/>
+          <rect x="5" y="6" width="7" height="1" fill="#000"/>
+          <rect x="18" y="2" width="11" height="2" fill="#000"/>
+          <rect x="19" y="4" width="9" height="2" fill="#000"/>
+          <rect x="20" y="6" width="7" height="1" fill="#000"/>
+          <rect x="5" y="2" width="2" height="1" fill="#fff"/>
+          <rect x="7" y="3" width="2" height="1" fill="#fff"/>
+          <rect x="20" y="2" width="2" height="1" fill="#fff"/>
+          <rect x="22" y="3" width="2" height="1" fill="#fff"/>
+        </svg>
+      </span>
+      <span class="cool-line cool-post">than yours.</span>
+    </h1>
+    <p class="cool-deal">A person with many hobbies</p>
+  </header>
+
+  <!-- Edit these numbers and labels however you like.
+       data-count = the number it counts up to, data-suffix = what goes after it.
+       Leave data-count off for things that aren't numbers. -->
+  <section class="cool-stats">
+    <p class="eyebrow">Official coolness report</p>
+    <h2 class="stats-title">The numbers don't lie</h2>
+    <div class="stats-grid">
+      <div class="stat"><span class="stat-num" data-count="362">362</span><span class="stat-label">Hobbies learned</span></div>
+      <div class="stat"><span class="stat-num" data-count="54">54</span><span class="stat-label">Years of being awesome</span></div>
+      <div class="stat"><span class="stat-num" data-count="148">148</span><span class="stat-label">Skills taught</span></div>
+      <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Times he was right (just ask him)</span></div>
+    </div>
+    <p class="stats-note">Your dad's stats: still loading…</p>
+  </section>
+
+  <main id="gallery" class="gallery g-frames-card"></main>
+
+  <footer class="page-end">
+    <p class="eyebrow">Final verdict</p>
+    <h2>We've all learned so much from your countless hobbies. Thank you for teaching us so much through them.</h2>
+    <a href="food.html" data-wipe="food">Time to eat 🍛</a>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="images/photos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/cool.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" data-page="world">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dad Around the World</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try { if (sessionStorage.getItem('wipe')) { sessionStorage.removeItem('wipe'); document.documentElement.classList.add('is-arriving'); } } catch (e) {}
+  </script>
+</head>
+<body class="theme-world">
+  <div class="wipe" aria-hidden="true"><div class="wipe-panel wipe-a"></div><div class="wipe-panel wipe-b"></div></div>
+
+  <nav class="nav" aria-label="Pages">
+    <a href="index.html" data-wipe="home">Home</a>
+    <a href="world.html" data-wipe="world" aria-current="page"><span><span class="nav-long">Around the </span>World</span></a>
+    <a href="silly.html" data-wipe="silly"><span>Silly<span class="nav-long"> Dad</span></span></a>
+    <a href="cool.html" data-wipe="cool"><span><span class="nav-long">Cooler Than Yours</span><span class="nav-short">Cool</span></span></a>
+    <a href="food.html" data-wipe="food"><span>Food<span class="nav-long"> + Family</span></span></a>
+  </nav>
+
+  <header class="world-hero">
+    <svg class="globe" viewBox="0 0 200 200" aria-hidden="true">
+      <defs>
+        <radialGradient id="globeFill" cx="35%" cy="30%" r="80%">
+          <stop offset="0" stop-color="#6cc0bf"/>
+          <stop offset="1" stop-color="#1d5960"/>
+        </radialGradient>
+        <clipPath id="globeClip"><circle cx="100" cy="100" r="80"/></clipPath>
+      </defs>
+      <circle cx="100" cy="100" r="80" fill="url(#globeFill)"/>
+      <g clip-path="url(#globeClip)">
+        <g class="land" fill="#e9c46a" fill-opacity="0.9">
+          <path d="M40 70 q14 -18 32 -8 q10 10 2 22 q-8 14 -22 8 q-16 -4 -12 -22z"/>
+          <path d="M92 118 q18 -6 26 8 q6 16 -8 28 q-14 8 -20 -6 q-6 -16 2 -30z"/>
+          <path d="M126 58 q20 -10 30 4 q4 12 -10 16 q-18 2 -20 -20z"/>
+          <path d="M200 70 q14 -18 32 -8 q10 10 2 22 q-8 14 -22 8 q-16 -4 -12 -22z"/>
+          <path d="M252 118 q18 -6 26 8 q6 16 -8 28 q-14 8 -20 -6 q-6 -16 2 -30z"/>
+          <path d="M286 58 q20 -10 30 4 q4 12 -10 16 q-18 2 -20 -20z"/>
+        </g>
+        <g fill="none" stroke="#fffaf0" stroke-opacity="0.45" stroke-width="1.2">
+          <ellipse cx="100" cy="100" rx="80" ry="22"/>
+          <line x1="20" y1="64" x2="180" y2="64"/>
+          <line x1="20" y1="136" x2="180" y2="136"/>
+          <ellipse class="mer" cx="100" cy="100" rx="80" ry="80"/>
+          <ellipse class="mer" cx="100" cy="100" rx="80" ry="80" style="animation-delay:-1.75s"/>
+          <ellipse class="mer" cx="100" cy="100" rx="80" ry="80" style="animation-delay:-3.5s"/>
+          <ellipse class="mer" cx="100" cy="100" rx="80" ry="80" style="animation-delay:-5.25s"/>
+        </g>
+      </g>
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#1d3557" stroke-width="3"/>
+      <g class="orbit">
+        <circle cx="100" cy="100" r="94" fill="none" stroke="#1d3557" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="2 6"/>
+        <g transform="translate(100 6)">
+          <path fill="#c8553d" d="M-14 0 L10 -2.5 Q16 0 10 2.5 Z M0 -1 L-6 -11 L-2 -11 L6 -1 Z M0 1 L-6 11 L-2 11 L6 1 Z M-12 -1 L-15 -6 L-13 -6 L-9 -1 Z M-12 1 L-15 6 L-13 6 L-9 1 Z"/>
+        </g>
+      </g>
+    </svg>
+
+    <h1 class="world-title">Dad Around<br><span class="accent">the World</span></h1>
+    <p class="world-sub">Passport stamps, postcards, and photographic proof that he's been everywhere.</p>
+    <div class="hero-stamp" aria-hidden="true">54 years<br>· worldwide ·</div>
+  </header>
+
+  <section class="world-route" aria-hidden="true">
+    <svg class="route-svg" viewBox="0 0 1000 640">
+      <path class="route-ghost" d="M80 540 C 220 360, 300 600, 430 420 S 600 100, 720 240 S 880 500, 930 120"/>
+      <g class="route-dots"></g>
+      <g class="route-pins"></g>
+      <g class="route-plane">
+        <path fill="#c8553d" d="M-26 0 L18 -4 Q28 0 18 4 Z M0 -2 L-10 -20 L-4 -20 L10 -2 Z M0 2 L-10 20 L-4 20 L10 2 Z M-22 -2 L-28 -11 L-24 -11 L-17 -2 Z M-22 2 L-28 11 L-24 11 L-17 2 Z"/>
+      </g>
+    </svg>
+    <p class="route-label">Every trip, every road trip, every "shortcut"…</p>
+  </section>
+
+  <main id="gallery" class="gallery g-frames-postcard"></main>
+
+  <footer class="page-end">
+    <p class="eyebrow">Next stop</p>
+    <h2>Where to next, Dad?</h2>
+    <a href="silly.html" data-wipe="silly">Meet Silly Dad 🤪</a>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="images/photos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/world.js"></script>
+</body>
+</html>
